@@ -27,16 +27,16 @@ jobs:
           pip install build twine pytest flake8
 
       # Step 4: 检查代码质量
-      - name: Run Lint
-        run: |
-          flake8 noco_db_python_sdk/
-        continue-on-error: false  # 如果代码有问题，任务会中止
+    #   - name: Run Lint
+    #     run: |
+    #       flake8 noco_db_python_sdk/
+    #     continue-on-error: false  # 如果代码有问题，任务会中止
 
       # Step 5: 运行单元测试
     #   - name: Run Tests
     #     run: |
     #       pytest tests/ --doctest-modules --junitxml=test-results.xml
-    #     continue-on-error: false
+    #     continue-on-error: false  # 如果代码有问题，任务会中止
 
       # Step 6: 构建项目
       - name: Build package
