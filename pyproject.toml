@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "noco-db-python-sdk"
-version = ""
+version = "0.0.2"
 description = "Client for NocoDB v2"
 authors = ["Konfig <engineering@konfigthis.com>"]
 license = "MIT"
